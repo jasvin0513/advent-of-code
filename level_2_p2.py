@@ -28,9 +28,9 @@ def is_invalid_id(id: int) -> bool:
 
         # Check if the substring makes up the entire string
         substr = str_id[0:substr_length]
-        substr_count = str_id.count(substr)
+        num_repetitions = str_id.count(substr)
         # If the substring makes up the string entirely, it is invalid
-        if (len(str_id) == (substr_length*substr_count)):
+        if (len(str_id) == (substr_length*num_repetitions)):
             return True
     return False
 
