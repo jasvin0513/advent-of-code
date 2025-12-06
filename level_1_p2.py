@@ -1,6 +1,6 @@
-def count_zero_dials(input: str)  -> int:
+def count_zero_dials(input_data: str)  -> int:
     dial_position = 50
-    turns = input.splitlines()
+    turns = input_data.splitlines()
     zero_count = 0
 
     for turn in turns:
